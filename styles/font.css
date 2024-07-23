@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url('../Assets/fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Medium;
+    src: url('../Assets/fonts/Oswald-Medium.ttf');
+}
+
+@font-face {
+    font-family: Oswald-Regular;
+    src: url('../Assets/fonts/Oswald-Regular.ttf');
+}
+
+:root{
+    --f-regular-1 : Montserrat-Regular, 'sans-serif';
+    --f-regular-2 : Oswald-Regular, 'sans-serif';
+}

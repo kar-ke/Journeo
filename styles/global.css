@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--f-regular-1);
+    font-size: 15px;
+    color: var(--c-primary);
+}
+
+a { text-decoration: none; color: inherit;}
+ul li { list-style: none;}
+
+:root{
+    --h-navbar : 100px;
+}
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.default-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
