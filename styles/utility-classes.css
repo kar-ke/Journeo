@@ -83,3 +83,7 @@
 
 /* text align  */
 .text-a-center { text-align: center;}
+
+
+/* pointer  */
+.pointer { cursor: pointer; }

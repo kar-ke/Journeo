@@ -7,3 +7,5 @@
     --c-cold-blue : #c4eeec;
     --c-grey: #1e2227;
 }
+
+.c-white{ color: var(--c-white)}

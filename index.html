@@ -16,11 +16,12 @@
     <header class="hero-banner">
         <div class="nav-bar">
             <div class="nav-bar-wrapper container">
-                <div>
+                <div class="logo-container">
                     <img src="./Assets/logo/journeo logo.svg" alt="journeo logo" class="logo">
                 </div>
-                <nav>
+                <nav class="main-nav">
                     <ul class="nav-list">
+                        <div class="close-nav-btn"><i class='bx bx-x pointer f20' onclick="closeMainNav()"></i></div>
                         <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
                         <li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li>
                         <li class="nav-item">
@@ -49,13 +50,19 @@
                             </ul>
                         </li>
                         <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link"><i class='bx bx-search f20'></i></a></li>
                     </ul>
                 </nav>
+                <div class="search-container">
+                    <i class='bx bx-search f20 c-white pointer' onclick="openSearchbar()"></i>
+                </div>
                 <div class="search-bar">
                     <input id="input-box" type="text" placeholder="Search" autocomplete="off">
                     <button class="default-btn"><i class='bx bx-search f20'></i></button>
-                    <i class='bx bx-x f20 close-search'></i>
+                    <i class='bx bx-x f20' onclick="closeSearchBar()"></i>
+                </div>
+                <!-- responsive nav menu  -->
+                <div class="mobile-nav-menu">
+                    <i class='bx bx-menu f20 c-white pointer' onclick="openMainNav()"></i>
                 </div>
             </div>
         </div>
