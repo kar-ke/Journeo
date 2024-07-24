@@ -4,16 +4,17 @@
 }
 
 @font-face {
-    font-family: Oswald-Medium;
-    src: url('../Assets/fonts/Oswald-Medium.ttf');
+    font-family: Oswald-Regular;
+    src: url('../Assets/fonts/Oswald-Regular.ttf');
 }
 
 @font-face {
-    font-family: Oswald-Regular;
-    src: url('../Assets/fonts/Oswald-Regular.ttf');
+    font-family: VujahdayScript-Regular;
+    src: url('../Assets/fonts/VujahdayScript-Regular.ttf');
 }
 
 :root{
     --f-regular-1 : Montserrat-Regular, 'sans-serif';
     --f-regular-2 : Oswald-Regular, 'sans-serif';
+    --f-decorative : VujahdayScript-Regular, 'sans-serif';
 }
