@@ -6,7 +6,11 @@
     --c-black : #000000;
     --c-cold-blue : #c4eeec;
     --c-grey: #1e2227;
+    --c-grey-100 : #2d394b;
+    --c-grey-300: #191d20;
 }
 
 .c-white{ color: var(--c-white)}
 .c-grey{ color: var(--c-grey)}
+.c-grey-1{ color: var(--c-grey-100)}
+.c-blue{ color: var(--c-cold-blue)}

@@ -1,0 +1,30 @@
+
+.title-xxl, .title-xl, .title-l, .title-m, .title-s { font-family: var(--f-regular-2); letter-spacing: 1px; line-height: 1.2;}
+.title-xxl { font-size: 120px;}
+.title-xl { font-size: 40px;}
+.title-l { font-size: 30px;}
+.title-m { font-size: 20px;}
+.title-s { font-size: 15px;}
+
+@media screen and (max-width: 1400px){
+    
+}
+
+@media screen and (max-width: 1200px){
+    .title-xl { font-size: 30px;}
+    .title-l { font-size: 25px;}
+    .title-m { font-size: 15px;}
+    .title-s { font-size: 12px;}
+}
+@media screen and (max-width: 992px){
+    
+}
+@media screen and (max-width: 768px){
+    .title-xxl { font-size: 80px;}
+}
+@media screen and (max-width: 576px){
+    .title-xxl { font-size: 60px;}
+}
+
+
+
