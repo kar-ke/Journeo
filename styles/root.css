@@ -1,8 +1,9 @@
+@import url('./global.css');
 @import url('./font.css');
 @import url('./colors.css');
-@import url('./global.css');
-@import url('./main.css');
-@import url('./utility-classes.css');
 @import url('./typography.css');
+@import url('./utility-classes.css');
+@import url('./main.css');
 
+@import url('./animation.css');
 @import url('./responsive.css');

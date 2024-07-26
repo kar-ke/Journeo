@@ -1,0 +1,72 @@
+
+/* left columns animation */
+.lr_anime .left_col h2 {
+    animation: articleHeading 1s ease-out;
+} 
+
+@keyframes articleHeading {
+    0% {
+    transform: translateX(-20%);
+}
+}
+
+.lr_anime .left_col p,
+.lr_anime .left_col img {
+    animation: articleParagraph 1.2s ease-out;
+}
+
+@keyframes articleParagraph {
+    0% {
+    transform: translateX(-30%);
+    }
+}
+
+/* right columns animation  */
+.lr_anime .right_col {
+    animation: rightColAnim 1s ease-out;
+}
+
+@keyframes rightColAnim {
+    0% {
+        transform: translateX(50%);
+    }
+}
+
+
+/* scroll up animations  */
+.bottom .top {
+    animation : revealTop 1s ease-out;
+}
+
+@keyframes revealTop {
+    0%{
+        transform: translateY(50%);
+    }
+}
+
+/* blog cards animation  */
+.bottom .col-1{
+    animation : col1Top 1s ease-out;
+}
+.bottom .col-2{
+    animation : col2Top 1.2s ease-out;
+}
+.bottom .col-3{
+    animation : col3Top 1.4s ease-out;
+}
+
+@keyframes col1Top {
+    0%{
+        transform: translateY(30%);
+    }
+}
+@keyframes col2Top {
+    0%{
+        transform: translateY(40%);
+    }
+}
+@keyframes col3Top {
+    0%{
+        transform: translateY(50%);
+    }
+}

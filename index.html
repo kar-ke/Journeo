@@ -1,298 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journeo</title>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Journeo</title>
 
-    <link rel="shortcut icon" href="./Assets/logo/favicon logo.png" type="image/x-icon">
+		<link rel="shortcut icon" href="./Assets/logo/favicon logo.png" type="image/x-icon" />
 
-    <!-- icon set cdn  -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+		<!-- icon set cdn  -->
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-    <!-- styles  -->
-    <link rel="stylesheet" href="./styles/root.css">
-</head>
-<body>
-
-    <header class="hero-banner">
-        <div class="nav-bar">
-            <div class="nav-bar-wrapper container">
-                <div class="logo-container">
-                    <img src="./Assets/logo/journeo logo.svg" loading="lazy" alt="journeo logo" class="logo">
-                </div>
-                <nav class="main-nav">
-                    <ul class="nav-list">
-                        <div class="close-nav-btn"><i class='bx bx-x pointer f20' onclick="closeMainNav()"></i></div>
-                        <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">TOURS <i class='bx bx-chevron-down f20'></i></a>
-                            <ul class="sub-nav-list">
-                                <li class="sub-nav-item"><a href="#">FRENCH AUTUMN</a></li>
-                                <li class="sub-nav-item"><a href="#">GRAND SWITZERLAND</a></li>
-                                <li class="sub-nav-item"><a href="#">PRAGUR TRIP</a></li>
-                                <li class="sub-nav-item"><a href="#">DISCOVER JAPAN</a></li>
-                                <li class="sub-nav-item"><a href="#">SUNNY CROATIA</a></li>
-                                <li class="sub-nav-item"><a href="#">ROMANTIC NETHERLANDS</a></li>
-                                <li class="sub-nav-item"><a href="#">MAGNIFECENT ITALY</a></li>
-                                <li class="sub-nav-item"><a href="#">MAJESTIC ENGLAND</a></li>
-                                <li class="sub-nav-item"><a href="#">MEDITERRANEAN GREECE</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">SERVICES <i class='bx bx-chevron-down f20'></i></a>
-                            <ul class="sub-nav-list">
-                                <li class="sub-nav-item"><a href="#">MOUNTAINS TOURS</a></li>
-                                <li class="sub-nav-item"><a href="#">HONEYMOONS TOURS</a></li>
-                                <li class="sub-nav-item"><a href="#">SEA TOURS</a></li>
-                                <li class="sub-nav-item"><a href="#">CRUISE TOURS</a></li>
-                                <li class="sub-nav-item"><a href="#">SAFARI TOURS</a></li>
-                                <li class="sub-nav-item"><a href="#">EURO TOURS</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
-                    </ul>
-                </nav>
-                <div class="search-container">
-                    <i class='bx bx-search f20 c-white pointer' onclick="openSearchbar()"></i>
-                </div>
-                <div class="search-bar">
-                    <input id="input-box" type="text" placeholder="Search" autocomplete="off">
-                    <button class="default-btn"><i class='bx bx-search f20'></i></button>
-                    <i class='bx bx-x f20' onclick="closeSearchBar()"></i>
-                </div>
-                <!-- responsive nav menu  -->
-                <div class="mobile-nav-menu">
-                    <i class='bx bx-menu f20 c-white pointer' onclick="openMainNav()"></i>
-                </div>
-            </div>
-        </div>
-        <div class="banner-title">
-            <h2 class="decorative-text c-white">Journey</h2>
-            <h2 class="title-xxl c-white">EXPLORING <br> &nbsp;&nbsp;THE WORLD</h2>
-        </div>
-    </header>
-
-    <section class="article-1-container">
-        <div class="article-1 container">
-            <div class="article-1-text-area">
-                <article>
-                    <h2 class="title-xl c-grey">EXPLORE A DIFFERENT <br>WAY TO TRAVEL</h2>
-                    <p>Discover new cultures and have a wonderful rest with Backpack Story! Select the country 
-                        you’d like to visit and provide our agents with estimated 
-                        time – they’ll find and offer the most suitable tours and hotels.</p>
-                    <p>During our work we organized countless journeys for our clients. We started as a small tour bureau,
-                        and soon we expanded our offers list. Today we have valuable experience travelling and we can advise
-                        the most stunning resorts, cities and countries to visit!</p>
-                    <img src="./Assets/images/signature.png" loading="lazy" alt="signature" class="signature">
-                </article>
-            </div>
-            <div class="article-1-img-area">
-                <img src="./Assets/images/img-1.jpg" alt="lushy mountains" loading="lazy" class="article-1-img-1">
-                <img src="./Assets/images/img-2.jpg" alt="mountain with blue river" loading="lazy" class="article-1-img-2">
-            </div>
-        </div>
-    </section>
-
-    <section class="article-2-container">
-        <div class="video-tab">
-            <i class='bx bx-play f40 c-grey' ></i>
-        </div>
-        <div class="article-2-text-area">
-            <div class="article-2-text">
-                <p class="c-grey">Travel early and travel often. Live abroad, if you can. Understand cultures other than your own.
-                    As your understanding of other cultures increases, your understanding of yourself andyour own 
-                    culture will increase exponentially.
-                </p>
-                <small class="article-2-subtext">A good traveller has no fixed plans, and is not intent on arriving.</small>
-                <i class='bx bxs-quote-left f20 c-grey quote'></i>
-            </div>
-        </div>
-    </section>
-
-    <section class="features-section">
-        <div class="features-container container">
-            <div class="features">
-                <h2 class="title-l c-grey">01. BEST HOTELS</h2>
-                <p>We guarantee the best hotels and very comfortable rooms, 
-                    which will be appreciated by every traveller. You will be 
-                    absolutely happy with the hotel and will have a wonderful vacation there.
-                </p>
-            </div>
-            <div class="features">
-                <h2 class="title-l c-grey">02. TOURIST GUIDE</h2>
-                <p>We provide our clients with such a service as Tourist Guide. Its main
-                    goal is to ensure people with all necessary information any time he 
-                    needs. This service is similar to Customer Support with emphasis on travelling.
-                </p>
-            </div>
-            <div class="features">
-                <h2 class="title-l c-grey">03. FLIGHTS TICKETS</h2>
-                <p class="">You can book tickets on any plane online via our booking system. Here you have
-                    an opportunity to select your transport operator. Our representatives will help
-                    you with the details.
-                </p>
-            </div>
-        </div>
-        <div class="decorative-card">
-            
-        </div>
-        <div class="grid-container">
-            <div class="grid-item item-1">
-                <div class="img-wrapper">
-                    <img src="./Assets/images/img-4.jpg" loading="lazy" alt="himalayas">
-                    <div class="overlay">
-                        <p class="text title-l c-white">Indian Tourism</p>&nbsp;<p>from $1200</p>
+		<!-- styles  -->
+		<link rel="stylesheet" href="./styles/root.css" />
+	</head>
+	<body>
+        <header class="hero-banner">
+            <!-- navbar  -->
+            <div class="nav-bar" id="header">
+                <div class="nav-bar-wrapper container">
+                    <div class="logo-container">
+                        <img src="./Assets/logo/journeo logo.svg" loading="lazy" alt="journeo logo" class="logo" />
+                    </div>
+                    <nav class="main-nav">
+                        <ul class="nav-list">
+                            <div class="close-nav-btn"><i class="bx bx-x pointer f20" onclick="closeMainNav()"></i></div>
+                            <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">ABOUT</a></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">TOURS <i class="bx bx-chevron-down f20"></i></a>
+                                <ul class="sub-nav-list">
+                                    <li class="sub-nav-item"><a href="#">FRENCH AUTUMN</a></li>
+                                    <li class="sub-nav-item"><a href="#">GRAND SWITZERLAND</a></li>
+                                    <li class="sub-nav-item"><a href="#">PRAGUR TRIP</a></li>
+                                    <li class="sub-nav-item"><a href="#">DISCOVER JAPAN</a></li>
+                                    <li class="sub-nav-item"><a href="#">SUNNY CROATIA</a></li>
+                                    <li class="sub-nav-item"><a href="#">ROMANTIC NETHERLANDS</a></li>
+                                    <li class="sub-nav-item"><a href="#">MAGNIFECENT ITALY</a></li>
+                                    <li class="sub-nav-item"><a href="#">MAJESTIC ENGLAND</a></li>
+                                    <li class="sub-nav-item"><a href="#">MEDITERRANEAN GREECE</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">SERVICES <i class="bx bx-chevron-down f20"></i></a>
+                                <ul class="sub-nav-list">
+                                    <li class="sub-nav-item"><a href="#">MOUNTAINS TOURS</a></li>
+                                    <li class="sub-nav-item"><a href="#">HONEYMOONS TOURS</a></li>
+                                    <li class="sub-nav-item"><a href="#">SEA TOURS</a></li>
+                                    <li class="sub-nav-item"><a href="#">CRUISE TOURS</a></li>
+                                    <li class="sub-nav-item"><a href="#">SAFARI TOURS</a></li>
+                                    <li class="sub-nav-item"><a href="#">EURO TOURS</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search-container">
+                        <i class="bx bx-search f20 c-white pointer" onclick="openSearchbar()"></i>
+                    </div>
+                    <div class="search-bar">
+                        <input id="input-box" type="text" placeholder="Search" autocomplete="off" />
+                        <button class="default-btn"><i class="bx bx-search f20"></i></button>
+                        <i class="bx bx-x f20" onclick="closeSearchBar()"></i>
+                    </div>
+                    <!-- responsive nav menu  -->
+                    <div class="mobile-nav-menu">
+                        <i class="bx bx-menu f20 c-white pointer" onclick="openMainNav()"></i>
                     </div>
                 </div>
             </div>
-            <div class="grid-item item-2">
-                <div class="img-wrapper">
-                    <img src="./Assets/images/img-5.jpg" loading="lazy" alt="farming">
-                    <div class="overlay">
-                        <p class="text title-l c-white">Asia Tours</p>&nbsp;<p>from $1200</p>
-                    </div>
-                </div>
-                <div class="img-wrapper">
-                    <img src="./Assets/images/img-6.jpg" loading="lazy" alt="island">
-                    <div class="overlay">
-                        <p class="text title-l c-white">Indian Tourism</p>&nbsp;<p>from $1200</p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item item-3">
-                <div class="img-wrapper">
-                    <img src="./Assets/images/img-7.jpg" loading="lazy" alt="effil tower">
-                    <div class="overlay">
-                        <p class="text title-l c-white">Europe Tours</p>&nbsp;<p>from $1200</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    </section>
+            <!-- hero  -->
+			<div class="banner-title">
+				<h2 class="decorative-text c-white">Journey</h2>
+				<h2 class="title-xxl c-white">
+					EXPLORING <br />
+					&nbsp;&nbsp;THE WORLD
+				</h2>
+			</div>
+		</header>
 
-    <section class="other-features">
-        <div class="other-features-wrapper container">
-            <article class="other-features-article">
-                <h2 class="title-l c-grey">START YOUR JOURNEY!</h2>
-                <p class="line-h-18">Let us curate an inspiring experience as you enjoy a personally-themed adventure with a 
-                    professional guide catered to your interests. Whether a one-day trip or multi-trip journey,
-                    you’ll be privileged to enjoy this ultimate luxury to explore Europe with an expert, as well 
-                    as the unique bird’s eye views from a helicopter in Europe, including Rome, the Dalmation Coast, 
-                    Paris, Prague and 20 top destinations.</p>
-            </article>
-            <ul class="other-features-list">
-                <li><i class='bx bx-right-arrow-alt f20 mr10'></i>First Class Flights</li>
-                <li><i class='bx bx-right-arrow-alt f20 mr10'></i>5 Star Accommodations</li>
-                <li><i class='bx bx-right-arrow-alt f20 mr10'></i>Inclusive Packages</li>
-                <li><i class='bx bx-right-arrow-alt f20 mr10'></i>Latest Model Vehicles</li>
-                <li><i class='bx bx-right-arrow-alt f20 mr10'></i>Handpicked Hotels</li>
-                <li><i class='bx bx-right-arrow-alt f20 mr10'></i>Accesibility managment</li>
-                <li><i class='bx bx-right-arrow-alt f20 mr10'></i>10 Languages available</li>
-                <li><i class='bx bx-right-arrow-alt f20 mr10'></i>+120 Premium city tours</li>
-                <li><i class='bx bx-right-arrow-alt f20 mr10'></i>Accesibility managment</li>
-                <li><i class='bx bx-right-arrow-alt f20 mr10'></i>+120 Premium city tours</li>
-            </ul>
-        </div>
+        <!-- article - 1  -->
+		<section class="article-1-container" id="article">
+			<div class="article-1 container">
+				<div class="article-1-text-area left_col">
+					<article>
+						<h2 class="title-xl c-grey">
+							EXPLORE A DIFFERENT <br />
+							WAY TO TRAVEL
+						</h2>
+						<p>
+							Discover new cultures and have a wonderful rest with Backpack Story! Select the country you’d like to visit and provide our agents with estimated time – they’ll find and offer the most suitable tours and hotels.
+						</p>
+						<p>
+							During our work we organized countless journeys for our clients. We started as a small tour bureau, and soon we expanded our offers list. Today we have valuable experience travelling and we can advise the most
+							stunning resorts, cities and countries to visit!
+						</p>
+						<img src="./Assets/images/signature.png" loading="lazy" alt="signature" class="signature" />
+					</article>
+				</div>
 
-        <div class="of-quote-wrapper container">
-            <div class="of-text">
-                <p class="c-grey">Time travel used to be thought of as just science fiction, but Einstein's general theorey of relativity
-                    allows for the possibility that we could wrap space-time so much that you could go off
-                    in a rocket and return before you set out.
-                </p>
-                <small class="of-subtext">Travel becomes a strategy for accumulating photographs.</small>
-                <i class='bx bxs-quote-left f20 c-grey of-quote'></i>
-            </div>
-        </div>
-    </section>
+				<div class="article-1-img-area right_col">
+					<img src="./Assets/images/img-1.jpg" alt="lushy mountains" loading="lazy" class="article-1-img-1" />
+					<img src="./Assets/images/img-2.jpg" alt="mountain with blue river" loading="lazy" class="article-1-img-2" />
+				</div>
+			</div>
+		</section>
 
-    <section class="blog-section container">
-        <h2 class="title-l c-grey">THE BLOG POST</h2>
-        <div class="blog-container ">
-            
-            <div class="blog-card">
-                <div>
-                    <img src="./Assets/images/blog-img-1.jpg" loading="lazy" alt="valley" class="blog-img">
-                </div>
-                <div>
-                    <time class="f12 mb10"><i class='bx bxs-calendar f15 mr5'></i>February 1, 2024</time>
-                    <h4 class="title-m c-grey-1">5 PLACES TO VISIT THIS WINTER</h4>
-                </div>
-                <div>
-                    <p>New Year and Christmas holidays is a great occasion to travel somewhere. 
-                        You can either go somewhere with you family or friends, or even alone....
-                    </p>
-                </div>
-            </div>
+        <!-- article - 2 -->
+		<section class="article-2-container" id="quote1">
+			<div class="video-tab top">
+				<i class="bx bx-play f40 c-grey"></i>
+			</div>
+			<div class="article-2-text-area">
+				<div class="article-2-text">
+					<p class="c-grey">
+						Travel early and travel often. Live abroad, if you can. Understand cultures other than your own. As your understanding of other cultures increases, your understanding of yourself andyour own culture will increase
+						exponentially.
+					</p>
+					<small class="article-2-subtext">A good traveller has no fixed plans, and is not intent on arriving.</small>
+					<i class="bx bxs-quote-left f20 c-grey quote"></i>
+				</div>
+			</div>
+		</section>
 
-            <div class="blog-card">
-                <div>
-                    <img src="./Assets/images/blog-img-2.jpg" loading="lazy" alt="valley" class="blog-img">
-                </div>
-                <div>
-                    <time class="f12 mb10"><i class='bx bxs-calendar f15 mr5'></i>February 1, 2024</time>
-                    <h4 class="title-m c-grey-1">BUDGET TRIPS FOR WINTER BREAK</h4>
-                </div>
-                <div>
-                    <p>Budget trip doesn’t mean boring! There are numerous places worth visiting
-                        even if you don’t have much money. The golden sands of Florida and California...
-                    </p>
-                </div>
-            </div>
+        <!-- features section -->
+        <section class="features-section" id="features-1">
+            <div class="features-container right_col container" >
+				<div class="features">
+					<h2 class="title-l c-grey">01. BEST HOTELS</h2>
+					<p>We guarantee the best hotels and very comfortable rooms, which will be appreciated by every traveller. You will be absolutely happy with the hotel and will have a wonderful vacation there.</p>
+				</div>
+				<div class="features">
+					<h2 class="title-l c-grey">02. TOURIST GUIDE</h2>
+					<p>
+						We provide our clients with such a service as Tourist Guide. Its main goal is to ensure people with all necessary information any time he needs. This service is similar to Customer Support with emphasis on
+						travelling.
+					</p>
+				</div>
+				<div class="features">
+					<h2 class="title-l c-grey">03. FLIGHTS TICKETS</h2>
+					<p class="">You can book tickets on any plane online via our booking system. Here you have an opportunity to select your transport operator. Our representatives will help you with the details.</p>
+				</div>
+			</div>
+        </section>
+        
+        <!-- places section  -->
+		<section class="places-section" id="places-grid">
+			<div class="decorative-card"></div>
+			<div class="grid-container top" >
+				<div class="grid-item item-1">
+					<div class="img-wrapper">
+						<img src="./Assets/images/img-4.jpg" loading="lazy" alt="himalayas" />
+						<div class="overlay">
+							<p class="text title-l c-white">Indian Tourism</p>
+							&nbsp;
+							<p>from $1200</p>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item item-2">
+					<div class="img-wrapper">
+						<img src="./Assets/images/img-5.jpg" loading="lazy" alt="farming" />
+						<div class="overlay">
+							<p class="text title-l c-white">Asia Tours</p>
+							&nbsp;
+							<p>from $1200</p>
+						</div>
+					</div>
+					<div class="img-wrapper">
+						<img src="./Assets/images/img-6.jpg" loading="lazy" alt="island" />
+						<div class="overlay">
+							<p class="text title-l c-white">Indian Tourism</p>
+							&nbsp;
+							<p>from $1200</p>
+						</div>
+					</div>
+				</div>
+				<div class="grid-item item-3">
+					<div class="img-wrapper">
+						<img src="./Assets/images/img-7.jpg" loading="lazy" alt="effil tower" />
+						<div class="overlay">
+							<p class="text title-l c-white">Europe Tours</p>
+							&nbsp;
+							<p>from $1200</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-            <div class="blog-card">
-                <div>
-                    <img src="./Assets/images/blog-img-3.jpg" loading="lazy" alt="valley" class="blog-img">
-                </div>
-                <div>
-                    <time class="f12 mb10"><i class='bx bxs-calendar f15 mr5'></i>February 1, 2024</time>
-                    <h4 class="title-m c-grey-1">WALKING TO MACHU PICCHU, PERU</h4>
-                </div>
-                <div>
-                    <p>Machu Picchu is mysterious and attractive place for all tourists visiting Peru. 
-                        If you agree to take this path you need to know more information...
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        <!-- other features  -->
+		<section class="other-features" id="other-features-section">
+			<div class="other-features-wrapper container">
+				<article class="other-features-article left_col">
+					<h2 class="title-l c-grey">START YOUR JOURNEY!</h2>
+					<p class="line-h-18">
+						Let us curate an inspiring experience as you enjoy a personally-themed adventure with a professional guide catered to your interests. Whether a one-day trip or multi-trip journey, you’ll be privileged to enjoy this
+						ultimate luxury to explore Europe with an expert, as well as the unique bird’s eye views from a helicopter in Europe, including Rome, the Dalmation Coast, Paris, Prague and 20 top destinations.
+					</p>
+				</article>
+				<ul class="other-features-list right_col">
+					<li><i class="bx bx-right-arrow-alt f20 mr10"></i>First Class Flights</li>
+					<li><i class="bx bx-right-arrow-alt f20 mr10"></i>5 Star Accommodations</li>
+					<li><i class="bx bx-right-arrow-alt f20 mr10"></i>Inclusive Packages</li>
+					<li><i class="bx bx-right-arrow-alt f20 mr10"></i>Latest Model Vehicles</li>
+					<li><i class="bx bx-right-arrow-alt f20 mr10"></i>Handpicked Hotels</li>
+					<li><i class="bx bx-right-arrow-alt f20 mr10"></i>Accesibility managment</li>
+					<li><i class="bx bx-right-arrow-alt f20 mr10"></i>10 Languages available</li>
+					<li><i class="bx bx-right-arrow-alt f20 mr10"></i>+120 Premium city tours</li>
+					<li><i class="bx bx-right-arrow-alt f20 mr10"></i>Accesibility managment</li>
+					<li><i class="bx bx-right-arrow-alt f20 mr10"></i>+120 Premium city tours</li>
+				</ul>
+			</div>
 
-    <footer class="footer-section">
-        <div class="footer-wrapper container">
-            <div class="footer-img-area">
-                <img src="./Assets/images/footer-image.jpg" loading="lazy" alt="footer-image">
-            </div>
-            <div class="footer-text-area">
-                <h2 class="title-l c-white">NEWSLETTER SIGN UP</h2>
-                <p class="title-s c-blue">SIGN UP NOW TO RECEIVE HOT SPECIAL OFFERS AND INFORMATION ABOUT THE BEST TOURS!</p>
-                <div class="input-container">
-                    <input type="text" placeholder="Sign up on news">
-                    <i class='bx bxs-chevron-right-circle f20 c-blue'></i>
-                </div>
-            </div>
-        </div>
+			<div class="of-quote-wrapper container">
+				<div class="of-text">
+					<p class="c-grey">
+						Time travel used to be thought of as just science fiction, but Einstein's general theorey of relativity allows for the possibility that we could wrap space-time so much that you could go off in a rocket and return
+						before you set out.
+					</p>
+					<small class="of-subtext">Travel becomes a strategy for accumulating photographs.</small>
+					<i class="bx bxs-quote-left f20 c-grey of-quote"></i>
+				</div>
+			</div>
+		</section>
 
-        <div class="secondary-footer">
-            <div class="secondary-footer-wrapper container">
-                <div class="logo-container">
-                    <img src="./Assets/logo/journeo logo.svg" loading="lazy" alt="logo" class="logo">
-                </div>
-                <p class="f12">Zemez &copy. All rights reserved.</p>
-                <ul class="socials-list">
-                    <li><a href="#"><i class='bx bxl-facebook f20 socials-icon'></i></a></li>
-                    <li><a href="#"><i class='bx bxl-twitter f20 socials-icon'></i></a></li>
-                    <li><a href="#"><i class='bx bxl-instagram f20 socials-icon'></i></a></li>
-                    <li><a href="#"><i class='bx bxl-pinterest f20 socials-icon'></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+        <!-- Blog section  -->
+		<section class="blog-section container" id="blogs-section">
+			<div class="left_col">
+				<h2 class="title-l c-grey">THE BLOG POST</h2>
+			</div>
+			<div class="blog-container">
+				<div class="blog-card col-1">
+					<div>
+						<img src="./Assets/images/blog-img-1.jpg" loading="lazy" alt="valley" class="blog-img" />
+					</div>
+					<div>
+						<time class="f12 mb10"><i class="bx bxs-calendar f15 mr5"></i>February 1, 2024</time>
+						<h4 class="title-m c-grey-1">5 PLACES TO VISIT THIS WINTER</h4>
+					</div>
+					<div>
+						<p>New Year and Christmas holidays is a great occasion to travel somewhere. You can either go somewhere with you family or friends, or even alone....</p>
+					</div>
+				</div>
 
-    
+				<div class="blog-card col-2">
+					<div>
+						<img src="./Assets/images/blog-img-2.jpg" loading="lazy" alt="valley" class="blog-img" />
+					</div>
+					<div>
+						<time class="f12 mb10"><i class="bx bxs-calendar f15 mr5"></i>February 1, 2024</time>
+						<h4 class="title-m c-grey-1">BUDGET TRIPS FOR WINTER BREAK</h4>
+					</div>
+					<div>
+						<p>Budget trip doesn’t mean boring! There are numerous places worth visiting even if you don’t have much money. The golden sands of Florida and California...</p>
+					</div>
+				</div>
 
-    <script src="./script/script.js"></script>
-</body>
+				<div class="blog-card col-2">
+					<div>
+						<img src="./Assets/images/blog-img-3.jpg" loading="lazy" alt="valley" class="blog-img" />
+					</div>
+					<div>
+						<time class="f12 mb10"><i class="bx bxs-calendar f15 mr5"></i>February 1, 2024</time>
+						<h4 class="title-m c-grey-1">WALKING TO MACHU PICCHU, PERU</h4>
+					</div>
+					<div>
+						<p>Machu Picchu is mysterious and attractive place for all tourists visiting Peru. If you agree to take this path you need to know more information...</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        <!-- footer section  -->
+		<footer class="footer-section">
+			<div class="footer-wrapper container">
+				<div class="footer-img-area">
+					<img src="./Assets/images/footer-image.jpg" loading="lazy" alt="footer-image" />
+				</div>
+				<div class="footer-text-area">
+					<h2 class="title-l c-white">NEWSLETTER SIGN UP</h2>
+					<p class="title-s c-blue">SIGN UP NOW TO RECEIVE HOT SPECIAL OFFERS AND INFORMATION ABOUT THE BEST TOURS!</p>
+					<div class="input-container">
+						<input type="text" placeholder="Sign up on news" />
+						<i class="bx bxs-chevron-right-circle f20 c-blue"></i>
+					</div>
+				</div>
+			</div>
+
+			<div class="secondary-footer">
+				<div class="secondary-footer-wrapper container">
+					<div class="logo-container">
+						<img src="./Assets/logo/journeo logo.svg" loading="lazy" alt="logo" class="logo" />
+					</div>
+					<p class="f12">Zemez &copy. All rights reserved.</p>
+					<ul class="socials-list">
+						<li>
+							<a href="#"><i class="bx bxl-facebook f20 socials-icon"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="bx bxl-twitter f20 socials-icon"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="bx bxl-instagram f20 socials-icon"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="bx bxl-pinterest f20 socials-icon"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./script/script.js"></script>
+	</body>
 </html>

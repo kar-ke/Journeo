@@ -1,18 +1,20 @@
 
 @media screen and (max-width: 1400px){
-    
+    /* No changes  */
 }
 
 
 @media screen and (max-width: 1200px){
     
+    /* Article 2 Section  */
     .article-2-text-area{
         position: static;
         padding: 0 15px;
     }
+
     .article-2-text{
-        margin: auto;
         padding: 0 20px;
+        margin: auto;
         border: none;
     }
 
@@ -26,30 +28,27 @@
 
 @media screen and (max-width: 992px){
 
+    /* Navbar styles*/
     .nav-bar-wrapper{
         justify-content: flex-end;
         gap: 20px;
     }
-    .logo-container{ margin-right: auto;}
 
-    .mobile-nav-menu{display: block;
-    
-    }
+    .logo-container{ margin-right: auto;}
+    .mobile-nav-menu{ display: block; }
     
     .main-nav{
+        width: 80%;
+        max-width: 400px;
+        height: 100%;
+        background-color : var(--c-grey);
         position: absolute;
         top: 0;
         right: -400px;
-        background-color : var(--c-grey);
-        height: 100%;
-        width: 80%;
-        max-width: 400px;
         transition: .5s;
     }
     
-    .main-nav.open{ 
-        right: 0;
-    }
+    .main-nav.open{ right: 0;}
 
     .nav-list{
         flex-direction: column;
@@ -63,7 +62,7 @@
         width: 100%;
     }
 
-    .nav-item:hover{ color: var(--c-cold-blue) }
+    .nav-item:hover{ color: var(--c-cold-blue); }
 
     .close-nav-btn{ 
         display:flex;
@@ -74,26 +73,33 @@
     .nav-link{ display: flex; justify-content: space-between;}
     .nav-link .bx-chevron-down { transform: rotate(-90deg);}
 
-    .other-features-wrapper{
-        flex-direction: column;
+    .nav-item:hover .sub-nav-list{
+        visibility: none;
+        opacity: 0;
     }
+
+    /* Other features section  */
+    .other-features-wrapper{ flex-direction: column; }
+
     .other-features-list{
         max-height: none;
         color: var(--c-grey);
     }
+
     .of-quote-wrapper {
         width: 100%;
         height: max-content;
         padding: 100px 0;
     }
 
-
 }
 
 
 @media screen and (max-width: 768px){
 
+    /* Article 1 section  */
     .article-1-container{height: max-content;}
+
     .article-1{
         flex-direction: column;
         gap: 30px;
@@ -106,23 +112,20 @@
         align-items: center;
         gap:20px;
     }
-    .article-1-img-1{
-        position: static;
-    }
 
-    .features-section{
-        background: transparent;
-    }
-    .features-container{
-        flex-direction: column;
-    }
-    .features-container h2{
-        font-size: 30px;
-    }
+    .article-1-img-1{ position: static; }
 
-    .grid-container{
-        grid-template-columns: 1fr;
-    }
+    /* Places section  */
+    .places-section{ background: var(--c-cold-blue); }
+    .decorative-card{ display: none; }
+    .grid-container{ grid-template-columns: 1fr; }
+
+    /* Features section  */
+    .features-container{ flex-direction: column; }
+    .features-container h2{ font-size: 30px; }
+
+    /* Other features section  */
+    .other-features{ padding-bottom: 0; }
 
     .of-quote{
         top: -60px;
@@ -131,49 +134,37 @@
     }
 
     .of-text{
-        border: none;
         padding: 0 20px 0 20px;
+        border: none;
     }
 
-    .blog-container{
-        flex-direction: column;
-    }
+    /* Blog section  */
+    .blog-container{ flex-direction: column; }
 
-    .footer-wrapper{
-        flex-direction: column;
-    }
-
-    .footer-img-area img{
-        position: static;
-    }
-
-    .footer-text-area{
-        padding-top: 10px;
-    }
-
-
-
+    /* Footer Section  */
+    .footer-wrapper{ flex-direction: column; }
+    .footer-img-area img{ position: static; }
+    .footer-text-area{ padding-top: 10px; }
 
 }
 
 
 @media screen and (max-width: 576px){
-    .article-1-img-area{
-        flex-direction: column;
-    }
 
+    /* Article 1 section  */
+    .article-1-img-area{ flex-direction: column; }
+
+    /* Footer section  */
     .secondary-footer-wrapper{
         flex-direction: column;
         gap: 0;
         padding: 10px;
     }
 
-    .secondary-footer-wrapper .logo-container{
+    .secondary-footer-wrapper 
+    .logo-container{
         margin-left: auto;
     }
+    .socials-list{ margin: 20px auto; }
     
-    .socials-list{
-        margin: 20px auto;
-
-    }
 }

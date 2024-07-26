@@ -6,8 +6,9 @@
 .title-m { font-size: 20px;}
 .title-s { font-size: 15px;}
 
+
 @media screen and (max-width: 1400px){
-    
+    /* No changes   */
 }
 
 @media screen and (max-width: 1200px){
@@ -16,12 +17,15 @@
     .title-m { font-size: 15px;}
     .title-s { font-size: 12px;}
 }
+
 @media screen and (max-width: 992px){
-    
+    /* No changes  */
 }
+
 @media screen and (max-width: 768px){
     .title-xxl { font-size: 80px;}
 }
+
 @media screen and (max-width: 576px){
     .title-xxl { font-size: 60px;}
 }
