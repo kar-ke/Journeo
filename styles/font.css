@@ -1,16 +1,16 @@
 @font-face {
     font-family: Montserrat-Regular;
-    src: url('../Assets/fonts/Montserrat-Regular.ttf');
+    src: url('../assets/fonts/Montserrat-Regular.ttf');
 }
 
 @font-face {
     font-family: Oswald-Regular;
-    src: url('../Assets/fonts/Oswald-Regular.ttf');
+    src: url('../assets/fonts/Oswald-Regular.ttf');
 }
 
 @font-face {
     font-family: VujahdayScript-Regular;
-    src: url('../Assets/fonts/VujahdayScript-Regular.ttf');
+    src: url('../assets/fonts/VujahdayScript-Regular.ttf');
 }
 
 :root{

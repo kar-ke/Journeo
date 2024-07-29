@@ -26,22 +26,22 @@ window.onscroll = function () {
 
 
     if (documentTopVal > articleTopVal - minusVal) {
-        sectionAnim(article, articleTopVal, "lr_anime");
+        sectionAnim(article, articleTopVal, "horizontal_slide_animation");
     }
     if (documentTopVal > quoteTopVal - minusVal) {
-        sectionAnim(quote, quoteTopVal, "bottom"); 
+        sectionAnim(quote, quoteTopVal, "vertical_slide_animation"); 
     }
     if (documentTopVal > featuresTopVal - minusVal) {
-        sectionAnim(features, featuresTopVal, "lr_anime");
+        sectionAnim(features, featuresTopVal, "horizontal_slide_animation");
     }
     if (documentTopVal > placesTopVal - minusVal) {
-        sectionAnim(places, placesTopVal, "bottom");
+        sectionAnim(places, placesTopVal, "vertical_slide_animation");
     }
     if (documentTopVal > otherFeaturesTopVal - minusVal) {
-        sectionAnim(otherFeatures, otherFeaturesTopVal, "lr_anime");
+        sectionAnim(otherFeatures, otherFeaturesTopVal, "horizontal_slide_animation");
     }
     if (documentTopVal > blogsTopVal - minusVal) {
-        sectionAnim(blogs, blogsTopVal, "bottom");
+        sectionAnim(blogs, blogsTopVal, "vertical_slide_animation");
     }
 };
 

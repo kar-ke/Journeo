@@ -122,7 +122,6 @@
 
     /* Features section  */
     .features-container{ flex-direction: column; }
-    .features-container h2{ font-size: 30px; }
 
     /* Other features section  */
     .other-features{ padding-bottom: 0; }
@@ -143,7 +142,7 @@
 
     /* Footer Section  */
     .footer-wrapper{ flex-direction: column; }
-    .footer-img-area img{ position: static; }
+    .footer-img-area .footer-img{ position: static; }
     .footer-text-area{ padding-top: 10px; }
 
 }

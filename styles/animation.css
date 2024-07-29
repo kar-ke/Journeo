@@ -1,28 +1,18 @@
 
 /* left columns animation */
-.lr_anime .left_col h2 {
-    animation: articleHeading 1s ease-out;
+.horizontal_slide_animation .left_col  {
+    animation: leftColAnim 1s ease-out;
 } 
 
-@keyframes articleHeading {
+@keyframes leftColAnim {
     0% {
     transform: translateX(-20%);
-}
-}
-
-.lr_anime .left_col p,
-.lr_anime .left_col img {
-    animation: articleParagraph 1.2s ease-out;
-}
-
-@keyframes articleParagraph {
-    0% {
-    transform: translateX(-30%);
     }
 }
 
+
 /* right columns animation  */
-.lr_anime .right_col {
+.horizontal_slide_animation .right_col {
     animation: rightColAnim 1s ease-out;
 }
 
@@ -34,7 +24,7 @@
 
 
 /* scroll up animations  */
-.bottom .top {
+.vertical_slide_animation .top {
     animation : revealTop 1s ease-out;
 }
 
@@ -45,13 +35,13 @@
 }
 
 /* blog cards animation  */
-.bottom .col-1{
+.vertical_slide_animation .col-1{
     animation : col1Top 1s ease-out;
 }
-.bottom .col-2{
+.vertical_slide_animation .col-2{
     animation : col2Top 1.2s ease-out;
 }
-.bottom .col-3{
+.vertical_slide_animation .col-3{
     animation : col3Top 1.4s ease-out;
 }
 
